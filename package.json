@@ -1,0 +1,5 @@
+{
+  "name": "@ibgrav/ergo",
+  "packageManager": "pnpm@7.25.0",
+  "private": true
+}

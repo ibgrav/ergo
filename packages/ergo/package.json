@@ -1,0 +1,15 @@
+{
+  "name": "ergo",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json"
+  },
+  "devDependencies": {
+    "typescript": "4.9.4",
+    "vite": "4.0.4"
+  }
+}
