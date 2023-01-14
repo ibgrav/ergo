@@ -8,7 +8,8 @@
     "types"
   ],
   "bin": {
-    "ergo-dev": "./bin/dev.mjs"
+    "ergo-dev": "./bin/dev.mjs",
+    "ergo-build": "./bin/build.mjs"
   },
   "types": "./types/index.d.ts",
   "scripts": {

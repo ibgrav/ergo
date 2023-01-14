@@ -1,12 +1,13 @@
-import { resolve } from "path";
 import type { FC } from "react";
 import { renderToString } from "react-dom/server";
-import { root, __dirname } from "../bin/constants.mjs";
-import { ErgoConfig } from "../types/index.js";
+import { __dirname } from "../bin/constants.mjs";
 
-export function renderServer(config: Required<ErgoConfig>, Page: FC): string {
-  const pageImportPath = resolve(root, config.pagesDir, "index.tsx");
+interface RenderServerProps {
+  Page: FC;
+  pageImportPath: string;
+}
 
+export function renderServer({ Page, pageImportPath }: RenderServerProps): string {
   return renderToString(
     <html>
       <head>

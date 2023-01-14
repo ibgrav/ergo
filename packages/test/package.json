@@ -2,7 +2,8 @@
   "name": "test",
   "private": true,
   "scripts": {
-    "dev": "ergo-dev"
+    "dev": "ergo-dev",
+    "build": "ergo-build"
   },
   "dependencies": {
     "@types/react": "18.0.26",
